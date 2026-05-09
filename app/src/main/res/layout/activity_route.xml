@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Màn hình chỉ đường dùng LinearLayout lồng RelativeLayout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="20dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvRouteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🗺️ Chỉ Đường"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Card thông tin chuyến đi dùng RelativeLayout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_card"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Từ:  📍 ..."
+            android:textColor="@color/text_light"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đến: 🎯 ..."
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            android:layout_below="@id/tvFrom"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng: ? dặm"
+            android:textColor="@color/text_dim"
+            android:textSize="13sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <!-- Tiêu đề các bước -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📋 Các bước di chuyển:"
+        android:textColor="@color/text_light"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Bước 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_card"
+        android:padding="14dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvStep1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1️⃣  ..."
+            android:textColor="@color/text_light"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Bước 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_card"
+        android:padding="14dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvStep2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2️⃣  ..."
+            android:textColor="@color/text_light"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Bước 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_card"
+        android:padding="14dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvStep3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3️⃣  ..."
+            android:textColor="@color/text_light"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Tip box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/tip_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💡 Mẹo: ..."
+            android:textColor="@color/gold"
+            android:textSize="13sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+    <!-- Nút xong -->
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="✅  Đã Hiểu, Lên Đường!"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/bg_dark"
+        android:backgroundTint="@color/gold"
+        android:stateListAnimator="@null"/>
+
+</LinearLayout>

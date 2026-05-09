@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/bg_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📜"
+        android:textSize="64sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quest Map"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:fontFamily="serif"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ứng dụng bản đồ chỉ đường theo phong cách game RPG huyền bí."
+        android:textSize="14sp"
+        android:textColor="@color/text_dim"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:lineSpacingMultiplier="1.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính năng:"
+        android:textSize="14sp"
+        android:textColor="@color/text_light"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏡 5 địa điểm khám phá\n🧭 Chỉ đường từng bước\n💡 Mẹo hành trình thú vị\n⚔️ Phong cách RPG cổ điển"
+        android:textSize="13sp"
+        android:textColor="@color/text_dim"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.8"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnBackAbout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="◀  Quay Lại"
+        android:textColor="@color/bg_dark"
+        android:backgroundTint="@color/gold"
+        android:stateListAnimator="@null"/>
+
+</LinearLayout>

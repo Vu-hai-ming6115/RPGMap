@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Màn hình chính dùng LinearLayout (vertical) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/bg_dark">
+
+    <!-- Icon game -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🗺️"
+        android:textSize="80sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tên app -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUEST MAP"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:fontFamily="serif"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Phụ đề -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bản đồ phiêu lưu huyền bí"
+        android:textSize="14sp"
+        android:textColor="@color/text_dim"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:background="@color/gold"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- Nút bắt đầu -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="⚔️  Vào Bản Đồ"
+        android:textSize="16sp"
+        android:textColor="@color/bg_dark"
+        android:backgroundTint="@color/gold"
+        android:layout_marginBottom="16dp"
+        android:stateListAnimator="@null"/>
+
+    <!-- Nút about -->
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="📜  Giới Thiệu"
+        android:textSize="16sp"
+        android:textColor="@color/gold"
+        android:backgroundTint="@color/bg_card"
+        android:stateListAnimator="@null"/>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v1.0  •  Quest Map Studio"
+        android:textSize="11sp"
+        android:textColor="@color/text_dim"
+        android:layout_marginTop="48dp"/>
+
+</LinearLayout>
