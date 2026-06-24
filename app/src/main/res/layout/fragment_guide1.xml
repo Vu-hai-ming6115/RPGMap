@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#1A1209">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📖 Hướng Dẫn"
+        android:textSize="13sp"
+        android:textColor="#8A7A5A"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Thanh tiến trình bước -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+        <View android:layout_width="28dp" android:layout_height="6dp"
+            android:background="#FFD700" android:layout_marginEnd="6dp"/>
+        <View android:layout_width="28dp" android:layout_height="6dp"
+            android:background="#3A2A10" android:layout_marginEnd="6dp"/>
+        <View android:layout_width="28dp" android:layout_height="6dp"
+            android:background="#3A2A10"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🗺️"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bước 1: Bản Đồ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bản đồ hiển thị thế giới phiêu lưu với 5 địa điểm:\n\n🏡 Làng — điểm xuất phát của bạn\n🌲 Rừng — nguy hiểm nhưng có kho báu\n🏰 Lâu Đài — đích đến cuối cùng\n🏪 Chợ — mua bán vật phẩm\n🌊 Hồ — nghỉ ngơi, hồi phục"
+        android:textSize="14sp"
+        android:textColor="#F0E6C8"
+        android:lineSpacingMultiplier="1.6"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnNext1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Tiếp theo ▶"
+        android:textColor="#1A1209"
+        android:backgroundTint="#FFD700"
+        android:textStyle="bold"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnExit1"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:text="✕  Thoát"
+        android:textColor="#8A7A5A"
+        android:backgroundTint="#2D2010"
+        android:stateListAnimator="@null"/>
+
+</LinearLayout>

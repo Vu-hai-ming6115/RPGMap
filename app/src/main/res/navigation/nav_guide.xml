@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nav Graph riêng cho GuideActivity.
+    Gồm 3 Fragment: Trang 1 → Trang 2 → Trang 3 (các bước hướng dẫn chơi)
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_guide"
+    app:startDestination="@id/guide1Fragment">
+
+    <!-- Bước 1: Giới thiệu bản đồ -->
+    <fragment
+        android:id="@+id/guide1Fragment"
+        android:name="com.example.mymap2.Guide1Fragment"
+        android:label="Bước 1"
+        tools:layout="@layout/fragment_guide1">
+        <action
+            android:id="@+id/action_guide1_to_guide2"
+            app:destination="@id/guide2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <!-- Bước 2: Cách chọn điểm đến -->
+    <fragment
+        android:id="@+id/guide2Fragment"
+        android:name="com.example.mymap2.Guide2Fragment"
+        android:label="Bước 2"
+        tools:layout="@layout/fragment_guide2">
+        <action
+            android:id="@+id/action_guide2_to_guide3"
+            app:destination="@id/guide3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <!-- Quay lại bước 1 -->
+        <action
+            android:id="@+id/action_guide2_back"
+            app:destination="@id/guide1Fragment"
+            app:popUpTo="@id/guide1Fragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <!-- Bước 3: Cách đọc chỉ đường -->
+    <fragment
+        android:id="@+id/guide3Fragment"
+        android:name="com.example.mymap2.Guide3Fragment"
+        android:label="Bước 3"
+        tools:layout="@layout/fragment_guide3">
+        <!-- Quay lại bước 2 -->
+        <action
+            android:id="@+id/action_guide3_back"
+            app:destination="@id/guide2Fragment"
+            app:popUpTo="@id/guide2Fragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+</navigation>

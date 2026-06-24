@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Màn hình chính dùng LinearLayout (vertical) -->
+<!-- Giữ nguyên LinearLayout cũ, chỉ thêm btnGuide ở giữa -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="32dp"
-    android:background="@color/bg_dark">
+    android:background="#1A1209">
 
-    <!-- Icon game -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +15,6 @@
         android:textSize="80sp"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Tên app -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -24,57 +22,66 @@
         android:text="QUEST MAP"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:textColor="@color/gold"
+        android:textColor="#FFD700"
         android:fontFamily="serif"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Phụ đề -->
     <TextView
         android:id="@+id/tvSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bản đồ phiêu lưu huyền bí"
         android:textSize="14sp"
-        android:textColor="@color/text_dim"
+        android:textColor="#8A7A5A"
         android:layout_marginBottom="48dp"/>
 
-    <!-- Divider -->
     <View
         android:layout_width="120dp"
         android:layout_height="2dp"
-        android:background="@color/gold"
+        android:background="#FFD700"
         android:layout_marginBottom="48dp"/>
 
-    <!-- Nút bắt đầu -->
+    <!-- Giữ nguyên -->
     <Button
         android:id="@+id/btnStart"
         android:layout_width="220dp"
         android:layout_height="56dp"
         android:text="⚔️  Vào Bản Đồ"
         android:textSize="16sp"
-        android:textColor="@color/bg_dark"
-        android:backgroundTint="@color/gold"
-        android:layout_marginBottom="16dp"
+        android:textColor="#1A1209"
+        android:backgroundTint="#FFD700"
+        android:layout_marginBottom="12dp"
         android:stateListAnimator="@null"/>
 
-    <!-- Nút about -->
+    <!-- MỚI: mở GuideActivity (dùng Navigation Graph bên trong) -->
+    <Button
+        android:id="@+id/btnGuide"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="📖  Hướng Dẫn"
+        android:textSize="16sp"
+        android:textColor="#FFD700"
+        android:backgroundTint="#2D2010"
+        android:layout_marginBottom="12dp"
+        android:stateListAnimator="@null"/>
+
+    <!-- Giữ nguyên -->
     <Button
         android:id="@+id/btnAbout"
         android:layout_width="220dp"
         android:layout_height="56dp"
         android:text="📜  Giới Thiệu"
         android:textSize="16sp"
-        android:textColor="@color/gold"
-        android:backgroundTint="@color/bg_card"
+        android:textColor="#8A7A5A"
+        android:backgroundTint="#2D2010"
         android:stateListAnimator="@null"/>
 
-    <!-- Footer -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="v1.0  •  Quest Map Studio"
         android:textSize="11sp"
-        android:textColor="@color/text_dim"
+        android:textColor="#8A7A5A"
         android:layout_marginTop="48dp"/>
 
 </LinearLayout>

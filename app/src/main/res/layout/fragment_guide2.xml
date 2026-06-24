@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#1A1209">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📖 Hướng Dẫn"
+        android:textSize="13sp"
+        android:textColor="#8A7A5A"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+        <View android:layout_width="28dp" android:layout_height="6dp"
+            android:background="#3A2A10" android:layout_marginEnd="6dp"/>
+        <View android:layout_width="28dp" android:layout_height="6dp"
+            android:background="#FFD700" android:layout_marginEnd="6dp"/>
+        <View android:layout_width="28dp" android:layout_height="6dp"
+            android:background="#3A2A10"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👆"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bước 2: Chọn Điểm Đến"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cách chọn điểm đến:\n\n1. Mở bản đồ bằng nút ⚔️ Vào Bản Đồ\n2. Chạm vào địa điểm muốn đến\n3. Đường đi màu cam sẽ xuất hiện\n4. Nhấn 🧭 Chỉ Đường để xem chi tiết"
+        android:textSize="14sp"
+        android:textColor="#F0E6C8"
+        android:lineSpacingMultiplier="1.6"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnBack2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="◀ Trước"
+            android:textColor="#F0E6C8"
+            android:backgroundTint="#2D2010"
+            android:stateListAnimator="@null"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnNext2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Tiếp ▶"
+            android:textColor="#1A1209"
+            android:backgroundTint="#FFD700"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</LinearLayout>
